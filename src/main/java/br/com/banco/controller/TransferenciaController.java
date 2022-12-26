@@ -22,11 +22,6 @@ public class TransferenciaController {
     @Autowired
     TransferenciaService service;
 
-    @GetMapping(value = "/transferencia")
-    public String transf() {
-        return "TRANSFERENCIA";
-    }
-
 
     @GetMapping(value = "/findAll")
     public ResponseEntity<List<Transferencia>> findAll() {
